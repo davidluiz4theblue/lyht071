@@ -1,0 +1,93 @@
+/* Input
+ ============================== */
+
+.uis-input {
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 0;
+  border-top: none;
+  border-bottom: 2px solid transparent;
+  border-left: none;
+  border-right: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  margin: 0;
+  border-radius: 0;
+  vertical-align: middle;
+  display: inline-block;
+  transition: all 0.4s ease-in-out;
+  &:focus {
+    outline: none;
+  }
+  &::-ms-clear {
+    display: none;
+  }
+  overflow: visible;
+  -webkit-appearance: none;
+}
+/* Icons
+ ============================== */
+
+.uis-form-wrapper {
+  position: relative;
+  width: auto;
+}
+
+.uis-form-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(0deg);
+  color: #ffffff;
+  transition: all 0.4s ease-in-out;
+  &.uis-active {
+    transform: rotateY(90deg);
+  }
+}
+
+.uis-input:focus.uis-active {
+  width: 100%;
+  border-color: #ffffff;
+}
+
+/* Pointer
+ ============================== */
+
+.uis-point {
+  cursor: pointer;
+}
+
+/* Link
+ ============================== */
+
+
+
+//  underline animation
+.underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fc7831;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}

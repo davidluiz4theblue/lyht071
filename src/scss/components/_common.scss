@@ -1,0 +1,101 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+  // background-image: linear-gradient(#464646, #000000);
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+}
+.row__main {
+  padding: 0 25px;
+}
+#bike-trip {
+  text-align: center;
+  overflow-y: hidden;
+  // min-height: 100vh;
+  // max-height: 100vh;
+}
+.hide-md {
+  display: none !important;
+}
+
+@media (max-width: 991px) {
+  .hide-md {
+    display: block !important;
+  }
+
+  .hide-sm {
+    display: none !important;
+  }
+}
+
+//< ==== CLASS BACKGROUND ==== >
+.silver {
+  background-image: linear-gradient(#464646, #000000);
+}
+.blue {
+  background-image: linear-gradient(#2c5364, #000000);
+}
+.red {
+  background-image: linear-gradient(#910909, #000000);
+}
+.yellow {
+  background-image: linear-gradient(#a27b05, #000000);
+}
+.green {
+  background-image: linear-gradient(#00d26f, #000000);
+}
+//< ==== BACKGROUND ==== >
+
+// //< ==== CLASS BTN BACKGROUND ==== >
+.btn-silver {
+  background: #fc7831;
+}
+.btn-blue {
+  background: #029ddb;
+}
+.btn-red {
+  background: #e81a2a;
+}
+.btn-yellow {
+  background: #c8db63;
+}
+.btn-green {
+  background: #359728;
+}
+//< ==== CLASS BTN BACKGROUND  ==== >
+
+// //< ==== CLASS BTN BACKGROUND ==== >
+.txt-silver {
+  color: #fc7831;
+}
+.txt-blue {
+  color: #029ddb;
+}
+.txt-red {
+  color: #e81a2a;
+}
+.txt-yellow {
+  color: #c8db63;
+}
+.txt-green {
+  color: #359728;
+}
+//< ==== CLASS BTN BACKGROUND  ==== >

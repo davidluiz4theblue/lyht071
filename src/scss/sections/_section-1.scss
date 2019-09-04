@@ -1,0 +1,157 @@
+section {
+  position: relative;
+  height: 100vh;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  // align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  // -webkit-justify-content: center;
+  // -webkit-align-items: center;
+  &__aside {
+    padding: 0;
+    text-align: left;
+    // padding: 30px 0 0 70px;
+    position: relative;
+    display: flex;
+    .content {
+      .text {
+        &__h1 {
+          font-size: 3.5vw;
+          color: #ffffff;
+          margin: 20px 0;
+        }
+        &__info {
+          font-size: 1.1rem;
+          color: #b7b7b7;
+          margin: 20px 0;
+          padding: 0;
+        }
+        &__price {
+          margin: 10px 0;
+          label {
+            font-size: 16px;
+            color: #ffffff;
+          }
+          p {
+            font-size: 22px;
+            span {
+              color: #b7b7b7;
+              font-size: 15px;
+              padding-left: 20px;
+            }
+          }
+        }
+        &__btn {
+          padding: 10px 25px;
+          color: #ffffff;
+          text-transform: uppercase;
+          border-radius: 6px;
+          box-shadow: 6px 5px 2px 0 rgba(0, 0, 0, 0.16);
+          font-family: LexendDeca;
+          font-size: 19px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.63;
+          letter-spacing: normal;
+          margin: 20px 0;
+          &:hover{
+            background: red;
+          }
+        }
+        // &__parameter {
+        //   position: absolute;
+        //   display: flex;
+        //   top: 120%;
+        //   li {
+        //     padding: 10px 15px 10px 0;
+        //     font-size: 17px;
+        //     line-height: 1.82;
+        //     color: #b7b7b7;
+        //   }
+        // }
+      }
+    }
+  }
+  &__bikeImage {
+    img {
+      width: 80%;
+      padding-top: 20px;
+    }
+    .name-product {
+      font-size: 19px;
+      text-transform: uppercase;
+      .nav-link {
+        color: #ffffff;
+      }
+      .nameRespon {
+        display: none;
+      }
+    }
+  }
+
+  .infomation {
+    height: 30%;
+    &__content2{
+      display: flex;
+      padding: 0;
+      .social{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        li{
+          a{
+            img{
+              width: 30px;
+            }
+          }
+        }
+      }
+    }
+    &__parameter {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end; 
+      li {
+        padding: 0 15px 0 0;
+        font-size: 17px;
+        line-height: 1.82;
+        color: #b7b7b7;
+      }
+    }
+    &__name{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;  
+      .name-product {
+        font-size: 19px;
+        text-transform: uppercase;
+        .nav-link {
+          padding: 0;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@media (max-width: 576px) {
+  // Moblie (768x1024)
+
+  .navbar {
+    &__logo {
+      order: 1;
+    }
+    &__menu {
+      order: 3;
+    }
+    &__icon {
+      .uis-form-wrapper {
+        width: 67%;
+      }
+    }
+  }
+}
+// =========================
+@media (max-width: 768px) {
+  // Tablets (768x1024)
+  
+  .navbar {
+    &__logo {
+      order: 2;
+    }
+    &__menu {
+      order: 3;
+    }
+    &__icon {
+      .uis-form-wrapper {
+        width: 52%;
+      }
+    }
+  }
+  
+  .swiper-slide {
+    &__aside {
+      order: 2;
+    }
+    &__bikeImage{
+      order: 1;
+    }
+    &__slide{
+      margin-top: 100px;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev{
+    display: none;
+  }
+  // .swiper-slide{
+  //   &__social{
+  //     flex-direction: row !important;
+  //     justify-content: flex-start !important;
+  //     align-items: flex-end !important;
+  //   }
+  // }
+}
+// =========================
+@media (max-width: 1024px) {
+  // Laptop (1024x1366)
+  .navbar {
+    &__logo {
+      order: 2;
+      justify-content: center !important;
+    }
+    &__menu {
+      background: black;
+      order: 3;
+    }
+    &__icon {
+      display: block !important;
+      .uis-form-wrapper {
+        width: 52%;
+      }
+    }
+  }
+  .swiper-slide {
+    &__aside {
+      padding-left: 0;
+      order: 2;
+      .none{
+        display: none;
+      }
+    }
+    &__bikeImage{
+      order: 1;
+      .name-product{
+        .nameRespon{
+          display: inline-block;
+        }
+      }
+    }
+    &__slide{
+      margin-top: 150px;
+    }
+  }
+  .infomation{
+    &__content2{
+      .social{
+        display: none !important;
+      }
+    }
+  }
+  .swiper-pagination{
+    display: none;
+  } 
+}
+// =========================
+@media (max-width: 1440px) {
+  // Laptop 14.5 inchs (1440x900)
+  
+}
+// =========================
+@media (max-width: 1600px) {
+  // Laptop (1600x900)
+}
+// =========================
+@media (max-width: 1280px) {
+  // Laptop 13 inchs (1280x720)
+}
+// =========================
+@media (max-width: 1366px) {
+  // Laptop 13 inchs (1366x900)
+}
+@media (min-width: 1024px){
+  
+}
